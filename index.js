@@ -12,7 +12,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 const path=require('path');
 app.use(express.static(path.join(__dirname,'client/build')))
-app.use('*',(req,res)=>{
+app.use('/',(req,res)=>{
     console.log(__dirname)
     console.log(path.join(__dirname,'client/build'))
     res.sendFile(path.resolve(__dirname,'client/build/index.html'))

@@ -6,7 +6,7 @@ import InfoBar from './../InfoBar/InfoBar'
 import Input from './../Input/Input'
 import Messages from './../Messages/Messages'
 // import TextContainer from './../TextContainer/TextContainer'
-const ENDPOINT = 'https://d-chat.vercel.app/';
+const ENDPOINT = '/';
 
 let socket;
 
