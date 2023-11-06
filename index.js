@@ -34,7 +34,7 @@ io.on('connection', (socket) => {
      
         io.to(user.room).emit('roomData',{room:user.room, users:getUserInRoom(user.room)})
         callback();
-
+// add data
  })
 
     socket.on('sendMessage',(message,callback)=>{
