@@ -11,10 +11,10 @@ const PORT = process.env.PORT || 5000;
 const server = http.createServer(app);
 const io = socketio(server);
 const path=require('path');
-app.use(express.static(path.join(__dirname,'client/build')))
+app.use(express.static(path.join('client/build')))
 app.use('*',(req,res)=>{
     console.log(__dirname)
-    console.log(path.join(__dirname,'client/build'))
+    console.log(path.join('client/build'))
     res.sendFile(path.resolve('client/build/index.html'))
 })
 
